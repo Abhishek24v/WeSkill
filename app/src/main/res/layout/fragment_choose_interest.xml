@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.authentication.signIn.ChooseInterestFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:id="@+id/header"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:paddingHorizontal="12dp">
+
+           <ImageView
+               android:id="@+id/btn_close"
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               android:layout_marginVertical="24dp"
+               android:layout_centerVertical="true"
+               android:src="@drawable/ic_backicon" />
+
+           <ProgressBar
+               android:id="@+id/scoreBar"
+               style="?android:attr/progressBarStyleHorizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginVertical="24dp"
+               android:layout_marginHorizontal="12dp"
+               android:layout_toRightOf="@id/btn_close"
+               android:layout_centerVertical="true"
+               android:progress="88"
+               android:progressDrawable="@drawable/signup_progress" />
+
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/heading"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="24dp"
+           android:layout_marginTop="24dp"
+           android:layout_below="@id/header"
+           android:fontFamily="@font/poppins_regular"
+           android:text="Choose interests"
+           android:textColor="@color/black"
+           android:textSize="30sp" />
+
+       <TextView
+           android:id="@+id/small_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/heading"
+           android:layout_marginLeft="24dp"
+           android:layout_marginTop="12dp"
+           android:fontFamily="@font/hind_regular"
+           android:text="Of your kids choice! Minimum of 3,"
+           android:textColor="#A8A8A8"
+           android:textSize="16sp" />
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="20dp"
+           android:layout_marginTop="49dp"
+           android:layout_below="@id/small_title">
+
+           <LinearLayout
+               android:id="@+id/interest1Box"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:orientation="horizontal">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/dance"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="5dp"
+                   android:layout_marginVertical="10dp"
+                   android:layout_weight="1"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="3dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:padding="8dp"
+                       android:src="@drawable/ic_danceicon" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_above="@id/genderBox"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="10dp"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Dance"
+                       android:textColor="@color/black"
+                       android:textSize="14sp"
+                       android:textStyle="bold" />
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/writing"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="5dp"
+                   android:layout_marginVertical="10dp"
+                   android:layout_weight="1"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="3dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:padding="8dp"
+                       android:src="@drawable/ic_writeicon" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_above="@id/genderBox"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="10dp"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Writing"
+                       android:textColor="@color/black"
+                       android:textSize="14sp"
+                       android:textStyle="bold" />
+
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/interest2Box"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_below="@id/interest1Box"
+               android:gravity="center_horizontal">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/music"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="3dp"
+                   android:layout_marginVertical="10dp"
+                   android:layout_weight="1"
+                   android:layout_marginHorizontal="5dp"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:src="@drawable/ic_musicicon"
+                       android:padding="8dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Music"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="10dp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:layout_above="@id/genderBox"
+                       android:textSize="14sp" />
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/arts"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="3dp"
+                   android:layout_marginHorizontal="5dp"
+                   android:layout_weight="1"
+                   android:layout_marginVertical="10dp"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:src="@drawable/ic_articon"
+                       android:padding="8dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Arts"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="10dp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:layout_above="@id/genderBox"
+                       android:textSize="14sp" />
+
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/interest3Box"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_below="@id/interest2Box"
+               android:gravity="center_horizontal">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/game"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="3dp"
+                   android:layout_marginVertical="10dp"
+                   android:layout_weight="1"
+                   android:layout_marginHorizontal="5dp"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:src="@drawable/ic_gameicon"
+                       android:padding="8dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Gaming"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="13dp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:layout_above="@id/genderBox"
+                       android:textSize="14sp" />
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/science"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="3dp"
+                   android:layout_marginHorizontal="5dp"
+                   android:layout_weight="1"
+                   android:layout_marginVertical="10dp"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:src="@drawable/ic_scienceicon"
+                       android:padding="8dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Science"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="13dp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:layout_above="@id/genderBox"
+                       android:textSize="14sp" />
+
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/interest4Box"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_below="@id/interest3Box"
+               android:gravity="center_horizontal">
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/chess"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="3dp"
+                   android:layout_marginVertical="10dp"
+                   android:layout_weight="1"
+                   android:layout_marginHorizontal="5dp"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:src="@drawable/ic_chessicon"
+                       android:padding="8dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Chess"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="10dp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:layout_above="@id/genderBox"
+                       android:textSize="14sp" />
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/outdoor"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardElevation="3dp"
+                   android:layout_marginHorizontal="5dp"
+                   android:layout_weight="1"
+                   android:layout_marginVertical="10dp"
+                   app:cardBackgroundColor="@color/white"
+                   app:cardCornerRadius="20dp">
+
+                   <ImageView
+                       android:layout_width="65dp"
+                       android:layout_height="69dp"
+                       android:src="@drawable/ic_outdooricon"
+                       android:padding="8dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/poppins_regular"
+                       android:text="Outdoors"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="13dp"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:layout_above="@id/genderBox"
+                       android:textSize="14sp" />
+
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/Bottom"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:background="@drawable/self_learning_bg_gray">
+
+           <RelativeLayout
+               android:id="@+id/NextBtn"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:layout_marginHorizontal="24dp"
+               android:layout_marginVertical="16dp"
+               android:layout_weight="1"
+               android:background="@drawable/ic_signinbtn"
+               android:elevation="4dp"
+               android:gravity="center"
+               app:layout_constraintBottom_toBottomOf="parent">
+
+               <ImageView
+                   android:id="@+id/check_logo"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:layout_centerVertical="true"
+                   android:layout_toEndOf="@id/book_text"
+                   android:paddingLeft="6dp"
+                   android:src="@drawable/ic_round_check"
+                   android:visibility="gone" />
+
+               <ProgressBar
+                   android:id="@+id/progressBook"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_centerVertical="true"
+                   android:layout_toEndOf="@id/book_text"
+                   android:indeterminateTint="@color/white"
+                   android:paddingLeft="10dp"
+                   android:visibility="gone">
+
+               </ProgressBar>
+
+               <TextView
+                   android:id="@+id/book_text"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:fontFamily="@font/poppins_regular"
+                   android:gravity="center"
+                   android:paddingVertical="10dp"
+                   android:text="Next"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+
+</FrameLayout>

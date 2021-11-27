@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/onBoardingFragment">
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.weskill2.ui.fragments.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.weskill2.ui.authentication.signIn.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpFragment_to_chooseParentFragment"
+            app:destination="@id/chooseParentFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.weskill2.ui.authentication.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.weskill2.ui.authentication.login.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseParentFragment"
+        android:name="com.weskill2.ui.authentication.signIn.ChooseParentFragment"
+        android:label="fragment_choose_parent"
+        tools:layout="@layout/fragment_choose_parent" >
+        <action
+            android:id="@+id/action_chooseParentFragment_to_parentInfoFragment"
+            app:destination="@id/parentInfoFragment" />
+        <action
+            android:id="@+id/action_chooseParentFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parentInfoFragment"
+        android:name="com.weskill2.ui.authentication.signIn.ParentInfoFragment"
+        android:label="fragment_parent_info"
+        tools:layout="@layout/fragment_parent_info" >
+        <action
+            android:id="@+id/action_parentInfoFragment_to_parentsExtraFragment"
+            app:destination="@id/parentsExtraFragment" />
+        <action
+            android:id="@+id/action_parentInfoFragment_to_chooseParentFragment"
+            app:destination="@id/chooseParentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parentsExtraFragment"
+        android:name="com.weskill2.ui.authentication.signIn.ParentsExtraFragment"
+        android:label="fragment_parents_extra"
+        tools:layout="@layout/fragment_parents_extra" >
+        <action
+            android:id="@+id/action_parentsExtraFragment_to_childInfoFragment"
+            app:destination="@id/childInfoFragment" />
+        <action
+            android:id="@+id/action_parentsExtraFragment_to_parentInfoFragment"
+            app:destination="@id/parentInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childInfoFragment"
+        android:name="com.weskill2.ui.authentication.signIn.ChildInfoFragment"
+        android:label="fragment_child_info"
+        tools:layout="@layout/fragment_child_info" >
+        <action
+            android:id="@+id/action_childInfoFragment_to_chooseChildFragment"
+            app:destination="@id/chooseChildFragment" />
+        <action
+            android:id="@+id/action_childInfoFragment_to_parentsExtraFragment"
+            app:destination="@id/parentsExtraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseChildFragment"
+        android:name="com.weskill2.ui.authentication.signIn.ChooseChildFragment"
+        android:label="fragment_choose_child"
+        tools:layout="@layout/fragment_choose_child" >
+        <action
+            android:id="@+id/action_chooseChildFragment_to_chooseInterestFragment"
+            app:destination="@id/chooseInterestFragment" />
+        <action
+            android:id="@+id/action_chooseChildFragment_to_childInfoFragment"
+            app:destination="@id/childInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseInterestFragment"
+        android:name="com.weskill2.ui.authentication.signIn.ChooseInterestFragment"
+        android:label="fragment_choose_interest"
+        tools:layout="@layout/fragment_choose_interest" >
+        <action
+            android:id="@+id/action_chooseInterestFragment_to_chooseChildFragment"
+            app:destination="@id/chooseChildFragment" />
+        <action
+            android:id="@+id/action_chooseInterestFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.weskill2.ui.authentication.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.weskill2.ui.fragments.CommunityFragment"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" />
+</navigation>

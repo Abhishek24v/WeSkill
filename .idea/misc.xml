@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/dot_default.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/dot_selected.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/ic_round_check.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/ic_textbox.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/self_learning_bg_gray.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/signup_progress.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/tab_indicator.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/tab_selector.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/drawable/textbox_shape.xml" value="0.240625" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/activity_on_boarding.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_blank.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_child_info.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_choose_child.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_choose_interest.xml" value="0.21041666666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_choose_parent.xml" value="0.21041666666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_community.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_feed.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_list_on_boarding.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_login.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_on_boarding.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_on_boarding_sthree.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_on_boarding_stwo.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_otp.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_parent_info.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_parents_extra.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_referral.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_reset_password.xml" value="0.21041666666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_sign_up.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_sign_up_details.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_train.xml" value="0.22447916666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/fragment_verify_otp.xml" value="0.21041666666666667" />
+        <entry key="..\:/Abhishek/AndroidProjects/WeSkill-2-dev/app/src/main/res/layout/onboarding_items.xml" value="0.22447916666666667" />
+        <entry key="..\:/AndroidStudioProjects/WeSkill/app/src/main/res/drawable/ic_back.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/WeSkill/app/src/main/res/drawable/ic_comment.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/WeSkill/app/src/main/res/drawable/ic_edit.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/WeSkill/app/src/main/res/drawable/ic_lock.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/WeSkill/app/src/main/res/drawable/ic_setting.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/WeSkill/app/src/main/res/drawable/ic_share.xml" value="0.2005" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/drawable/bg_reacted_button.xml" value="0.1105" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/drawable/bg_unreacted_button.xml" value="0.6" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/drawable/competitions_tab_selector.xml" value="0.1105" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/drawable/outlined_button.xml" value="0.1105" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/drawable/round_corner_button.xml" value="0.1405" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/drawable/tab_indicator.xml" value="0.1075" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/activity_competition.xml" value="0.136" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/activity_logged_in.xml" value="0.1" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/activity_main2.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/activity_view_entry.xml" value="0.1132694248234107" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/dialog_entry_done.xml" value="0.264" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/dialog_fullscreen_video.xml" value="0.1132694248234107" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/exoplayer_controls.xml" value="0.1132694248234107" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_community.xml" value="0.2" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_competition_entries.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_competition_info.xml" value="0.264" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_contests.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_discover.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_feed.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_home.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_profile.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_stage.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fragment_train.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/fullscreen_video_controls.xml" value="0.1132694248234107" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/item_entries.xml" value="0.4" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/item_post.xml" value="0.264" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/new_comment.xml" value="0.1331521739130435" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/layout/player_view.xml" value="0.1132694248234107" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/menu/bottom_bar_menu.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/rnqnk/AndroidStudioProjects/WeSkill-v2/app/src/main/res/menu/logged_in_menu.xml" value="0.23385416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryCTS"
+        tools:context=".ui.fragments.OnBoardingFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_above="@id/authBottom"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="-20dp"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/ob_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <ImageView
+                    android:layout_width="106sp"
+                    android:layout_height="67sp"
+                    android:src="@drawable/image_text_weskill"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="24dp" />
+
+                <!-- <com.google.android.material.tabs.TabLayout
+                     android:id="@+id/tl_onBoarding"
+                     android:layout_width="30dp"
+                     android:layout_height="8dp"
+                     android:layout_alignParentStart="true"
+                     android:layout_margin="24dp"
+                     android:layout_marginBottom="20dp"
+                     android:layout_alignParentBottom="true"
+                     app:tabBackground="@drawable/tab_selector"
+                     app:tabIndicatorHeight="8dp"
+                     app:tabPaddingEnd="20dp"
+                     app:tabPaddingStart="20dp" />-->
+
+                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:layout_width="wrap_content"
+                    app:dotsColor="@color/white"
+                    android:layout_marginBottom="40dp"
+                    app:dotsStrokeColor="@color/white"
+                    app:dotsCornerRadius="4dp"
+                    app:dotsSize="8dp"
+                    android:id="@+id/ob_dots"
+                    app:dotsSpacing="4dp"
+                    app:dotsStrokeWidth="1.6dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/authBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/self_learning_bg_gray">
+
+                <LinearLayout
+                    android:id="@+id/login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/loginBtn"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="64dp"
+                        android:gravity="center"
+                        android:elevation="4dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/ic_loginbtn"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/check_logo"
+                            android:visibility="gone"
+                            android:paddingLeft="6dp"
+                            android:src="@drawable/ic_round_check"
+                            android:layout_toEndOf="@id/book_text"
+                            android:layout_centerVertical="true"></ImageView>
+
+                        <ProgressBar
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/progressBook"
+                            android:visibility="gone"
+                            android:paddingLeft="10dp"
+                            android:indeterminateTint="@color/white"
+                            android:layout_toEndOf="@id/book_text"
+                            android:layout_centerVertical="true">
+
+                        </ProgressBar>
+
+                        <TextView
+                            android:id="@+id/book_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:paddingVertical="10dp"
+                            android:text="Log In"
+                            android:textAllCaps="false"
+                            android:textColor="@color/primaryCTS"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/signInBtn"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="64dp"
+                        android:gravity="center"
+                        android:elevation="4dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/ic_signinbtn"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/checkLogo"
+                            android:visibility="gone"
+                            android:paddingLeft="6dp"
+                            android:src="@drawable/ic_round_check"
+                            android:layout_toEndOf="@id/signInText"
+                            android:layout_centerVertical="true"></ImageView>
+
+                        <ProgressBar
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/progressSignIn"
+                            android:visibility="gone"
+                            android:paddingLeft="10dp"
+                            android:indeterminateTint="@color/white"
+                            android:layout_toEndOf="@id/signInText"
+                            android:layout_centerVertical="true">
+
+                        </ProgressBar>
+
+                        <TextView
+                            android:id="@+id/signInText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:paddingVertical="10dp"
+                            android:text="Sign Up"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login"
+                    android:layout_marginHorizontal="55dp"
+                    android:layout_marginBottom="40dp"
+                    android:alpha="0.8"
+                    android:textColor="#A8A8A8"
+                    android:fontFamily="@font/hind_regular"
+                    android:text="🔥 Join growing 6,784 students in taking your passions to next level"
+                    android:textAlignment="center" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>
